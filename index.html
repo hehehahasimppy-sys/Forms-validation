@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-box">
+
+        <div class="header">
+            <div class="icon">👤</div>
+            <h1>สมัครสมาชิก</h1>
+            <p>กรุณากรอกข้อมูลให้ครบถ้วน</p>
+        </div>
+
+        <form id="registerForm">
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>ชื่อ</label>
+                    <input type="text" id="firstname" placeholder="กรอกชื่อ">
+                    <small></small>
+                </div>
+
+                <div class="input-group">
+                    <label>นามสกุล</label>
+                    <input type="text" id="lastname" placeholder="กรอกนามสกุล">
+                    <small></small>
+                </div>
+
+            </div>
+
+            <div class="input-group">
+                <label>อีเมล</label>
+                <input type="email" id="email" placeholder="example@email.com">
+                <small></small>
+            </div>
+
+            <div class="input-group">
+                <label>เบอร์โทรศัพท์</label>
+                <input type="text" id="phone" placeholder="0812345678" maxlength="10">
+                <small></small>
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>ชื่อผู้ใช้ (Username)</label>
+                    <input type="text" id="username" placeholder="ชื่อผู้ใช้">
+                    <small></small>
+                </div>
+
+                <div class="input-group">
+                    <label>รหัสผ่าน (Password)</label>
+                    <input type="password" id="password" placeholder="อย่างน้อย 8 ตัวอักษร">
+                    <small></small>
+                </div>
+
+            </div>
+
+            <div class="input-group">
+                <label>ยืนยันรหัสผ่าน (Confirm Password)</label>
+                <input type="password" id="confirmPassword" placeholder="ยืนยันรหัสผ่าน">
+                <small></small>
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>เพศ</label>
+
+                    <div class="gender">
+                        <label>
+                            <input type="radio" name="gender" value="ชาย">
+                            ชาย
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="หญิง">
+                            หญิง
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="ไม่ระบุ">
+                            ไม่ระบุ
+                        </label>
+                    </div>
+
+                    <small id="genderError"></small>
+                </div>
+
+                <div class="input-group">
+                    <label>จังหวัด</label>
+
+                    <select id="province">
+                        <option value="">เลือกจังหวัด</option>
+                        <option>กรุงเทพมหานคร</option>
+                        <option>ชลบุรี</option>
+                        <option>เชียงใหม่</option>
+                        <option>นครราชสีมา</option>
+                        <option>ระยอง</option>
+                        <option>สมุทรปราการ</option>
+                        <option>ภูเก็ต</option>
+                        <option>ขอนแก่น</option>
+                    </select>
+
+                    <small></small>
+                </div>
+
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="terms">
+
+                <label for="terms">
+                    ยอมรับเงื่อนไขการใช้งานและนโยบายความเป็นส่วนตัว
+                </label>
+            </div>
+
+            <p id="termsError"></p>
+
+            <button type="submit" class="submit-btn">
+                👤 สมัครสมาชิก
+            </button>
+
+            <button type="reset" class="reset-btn">
+                🗑 ล้างข้อมูล
+            </button>
+
+        </form>
+
+        <div id="successMessage" class="success">
+            ✅ สมัครสมาชิกสำเร็จ!<br>
+            ขอบคุณสำหรับการสมัครสมาชิก
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
